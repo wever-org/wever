@@ -1,0 +1,20 @@
+{
+  "name": "@wever/jsx-plugin",
+  "version": "1.0.0",
+  "description": "Convert JSX code to XSET",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ignore ./test/test1.result.js ./test/main.js"
+  },
+  "author": "Arif Sardar",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.16.7",
+    "@babel/plugin-syntax-jsx": "^7.16.7"
+  }
+}

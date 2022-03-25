@@ -1,0 +1,6 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 60L110 10L210 60L110 110L10 60Z" fill="#402773" stroke="#B1A4CC" stroke-width="2"/>
+<path d="M10 60V160L110 210V110L10 60Z" fill="#381C75" stroke="#B1A4CC" stroke-width="2"/>
+<path d="M110 110V210L210 160V60L110 110Z" fill="#663BBF" stroke="#B1A4CC" stroke-width="2"/>
+<path d="M10 160V60L110 10L210 60V160L110 210L10 160Z" stroke="#B1A4CC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

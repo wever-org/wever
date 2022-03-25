@@ -1,0 +1,19 @@
+{
+  "name": "@wever/wever",
+  "version": "1.0.0",
+  "description": "An open-source, declarative and fexible JavaScript framework & library to create amazing User Interfaces.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wever-org/wever.git"
+  },
+  "author": "Arif Sardar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wever-org/wever/issues"
+  },
+  "homepage": "https://github.com/wever-org/wever#readme"
+}
