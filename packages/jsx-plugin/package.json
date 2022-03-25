@@ -1,6 +1,6 @@
 {
   "name": "@wever/jsx-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert JSX code to XSET",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,9 @@
   },
   "author": "Arif Sardar",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
