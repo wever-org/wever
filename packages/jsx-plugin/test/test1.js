@@ -43,20 +43,22 @@
 //                   <h1>Hello</h1>
 //                   <h1>World</h1>
 //             </div>
-//             {/* Inline Comments */}
-//             <div {...props} id="id" className="class">
-//                   <h1>Hello</h1>
-//                   <h1>World</h1>
-//             </div>
+<div id="id" className="class" {...props}>
+      {/* Inline Comments */}
+      <h1>Hello</h1>
+      <h1>World</h1>
+</div>
 //       </>)
 // }
 
-export default function App(props) {
+// export default function App(props) {
 
-      return (
-            <div className="container" id="first-div" style={style.container}>
-                  <h1 style={{ color: "#fff", backgroundColor: "#000" }}>Hello World</h1>
-                  <h1>My name is Arif Sardar</h1>
-            </div>
-      );
-}
+//       return (
+//             <div className="container" id="first-div" style={style.container}>
+//                   <h1 style={{ color: "#fff", backgroundColor: "#000" }}>Hello World</h1>
+//                   <h1>My name is Arif Sardar</h1>
+//             </div>
+//       );
+// }
+
+(<>{"Hello"}{/* Hello */}{"World"}</>)

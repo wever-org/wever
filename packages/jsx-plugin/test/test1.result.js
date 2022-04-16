@@ -1,3 +1,5 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 // Basic html test
 // const a = (<div>Hello World</div>)
 // Children Test
@@ -32,40 +34,41 @@
 //                   <h1>Hello</h1>
 //                   <h1>World</h1>
 //             </div>
-//             {/* Inline Comments */}
-//             <div {...props} id="id" className="class">
-//                   <h1>Hello</h1>
-//                   <h1>World</h1>
-//             </div>
-//       </>)
+({
+  "name": "div",
+  "props": {
+    "attributes": _extends({}, {
+      "id": "id",
+      "className": "class"
+    }, props),
+    "children": ["\n      ", "\n      ", {
+      "name": "h1",
+      "props": {
+        "attributes": {},
+        "children": ["Hello"]
+      }
+    }, "\n      ", {
+      "name": "h1",
+      "props": {
+        "attributes": {},
+        "children": ["World"]
+      }
+    }, "\n"]
+  }
+} //       </>)
 // }
-export default function App(props) {
-  return {
-    "name": "div",
-    "props": {
-      "attributes": {
-        "className": "container",
-        "id": "first-div",
-        "style": style.container
-      },
-      "children": ["\n                  ", {
-        "name": "h1",
-        "props": {
-          "attributes": {
-            "style": {
-              color: "#fff",
-              backgroundColor: "#000"
-            }
-          },
-          "children": ["Hello World"]
-        }
-      }, "\n                  ", {
-        "name": "h1",
-        "props": {
-          "attributes": {},
-          "children": ["My name is Arif Sardar"]
-        }
-      }, "\n            "]
-    }
-  };
-}
+// export default function App(props) {
+//       return (
+//             <div className="container" id="first-div" style={style.container}>
+//                   <h1 style={{ color: "#fff", backgroundColor: "#000" }}>Hello World</h1>
+//                   <h1>My name is Arif Sardar</h1>
+//             </div>
+//       );
+// }
+)({
+  "name": "Fragment",
+  "props": {
+    "attributes": {},
+    "children": ["Hello", "World"]
+  }
+});

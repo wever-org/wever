@@ -23,7 +23,12 @@ module.exports = declare((api, options) => {
             },
             JSXNamespacedName(path, state) {
                   throw path.buildCodeFrameError(`Namespace tags are not supported by Wever's JSX.`);
-            }
+            },
+            JSXExpressionContainer(path) {
+                  if (t.isJSXEmptyExpression(path.get('expression'))) {
+                        path.remove()
+                  }
+            },
       };
 
 

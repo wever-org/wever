@@ -69,10 +69,6 @@ module.exports = {
                   }
 
                   if (this.isJSXEmptyExpression(CHILDREN)) {
-                        // console.log("JSXEmptyExpression: ", CHILDREN.node);
-
-                        // t.addComment(CHILDREN.node, "leading", " hdfhdf ");
-                        // parentPath.remove();
 
                         return null;
                   }
@@ -119,7 +115,7 @@ module.exports = {
             let attrObject = _expressions.length ? generateAttrObject(_expressions) : null;
 
             if (_spreads.length) {
-                  let extension = attrObject ? _spreads.concat(attrObject) : _spreads;
+                  let extension = attrObject ? attrObject.concat(_spreads) : _spreads;
 
                   if (extension.length > 1) extension.unshift(t.ObjectExpression([]));
 

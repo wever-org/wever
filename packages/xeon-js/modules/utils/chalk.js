@@ -13,7 +13,7 @@ var isLog = true;
 
 const chalk = {
 
-      define: function (e) {
+      define: async function (e) {
             isLog = e;
       },
 
@@ -22,7 +22,7 @@ const chalk = {
        * 
        * @param  {...any} e 
        */
-      log: function (...e) {
+      log: async function (...e) {
             var swLogStyle = `padding: 5px;
                                background-color: #25832d;
                                color: #fff;
@@ -37,7 +37,7 @@ const chalk = {
        * 
        * @param  {...any} e 
        */
-      error: function (...e) {
+      error: async function (...e) {
             var swLogStyle = `padding: 5px;
                                background-color: #a20909;
                                color: #fff;
@@ -54,7 +54,7 @@ const chalk = {
        * 
        * @param  {...any} e 
        */
-      warn: function (...e) {
+      warn: async function (...e) {
             var swLogStyle = `padding: 5px;
                                background-color: #a07904;
                                color: #fff;
@@ -75,7 +75,7 @@ const chalk = {
              * 
              * @param  {...any} e 
              */
-            log: function (...e) {
+            log: async function (...e) {
                   var swLogStyle = `padding: 5px;
                                background-color: #25832d;
                                color: #fff;
@@ -90,7 +90,7 @@ const chalk = {
              * 
              * @param  {...any} e 
              */
-            error: function (...e) {
+            error: async function (...e) {
                   var swLogStyle = `padding: 5px;
                                background-color: #a20909;
                                color: #fff;
@@ -107,7 +107,7 @@ const chalk = {
              * 
              * @param  {...any} e 
              */
-            warn: function (...e) {
+            warn: async function (...e) {
                   var swLogStyle = `padding: 5px;
                                background-color: #a07904;
                                color: #fff;
@@ -129,7 +129,7 @@ const chalk = {
              * 
              * @param  {...any} e 
              */
-            log: function (...e) {
+            log: async function (...e) {
                   var swLogStyle = `padding: 5px;
                                background-color: #25832d;
                                color: #fff;
@@ -144,7 +144,7 @@ const chalk = {
              * 
              * @param  {...any} e 
              */
-            error: function (...e) {
+            error: async function (...e) {
                   var swLogStyle = `padding: 5px;
                                background-color: #a20909;
                                color: #fff;
@@ -161,7 +161,7 @@ const chalk = {
              * 
              * @param  {...any} e 
              */
-            warn: function (...e) {
+            warn: async function (...e) {
                   var swLogStyle = `padding: 5px;
                                background-color: #a07904;
                                color: #fff;
